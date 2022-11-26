@@ -1,13 +1,33 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body .quill {
+  height: 300px;
+  margin-bottom: 40px;
+  border-radius: 16px;
+}
+body .quill .ql-toolbar.ql-snow {
+  display: flex;
+  justify-content: center;
+  background-color: #e5e7eb;
+}
+body .css-b62m3t-container .css-1s2u09g-control {
+  min-height: 45px;
+  border-radius: 0;
+  border: 1px solid #ededf2;
+}
+body .css-b62m3t-container .css-1s2u09g-control:hover {
+  border: 1px solid #79b3ff;
+  outline: none;
+}
+.uiTable tr {
+  display: grid;
+  grid-template-columns: 10% 30% 20% 20% 20%;
+}
+td {
+  padding: 0 16px;
+}
+th {
+  padding: 0 16px;
 }
